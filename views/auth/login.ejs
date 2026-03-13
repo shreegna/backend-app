@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
+    <div class="login-container">
     <h2>Login Form</h2>
+
     <form action="/auth/login" method="POST">
-        <p><input type="text" name="email" placeholder="Email"></p>
-        <p><input type="password" name="password" placeholder="Password"></p>
-        <p><button>Login</button></p>
+        <p>
+            <input type="text" name="email" placeholder="Email">
+        </p>
+
+        <p>
+            <input type="password" name="password" placeholder="Password">
+        </p>
+
+        <p>
+            <button type="submit">Login</button>
+        </p>
     </form>
-    <p><a href="/auth/register">New User Register Here</a></p>
+
+    <p class="register-link">
+        <a href="/auth/register">New User Register Here</a>
+    </p>
+</div>
 </body>
 </html>

@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f6f2ef;
+}
+
+/* container */
+.admin-container{
+    width:800px;
+    margin:60px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* title */
+h2{
+    text-align:center;
+    color:#6b3e26;
+}
+
+/* add button */
+.add-btn{
+    display:inline-block;
+    margin-bottom:20px;
+    padding:8px 14px;
+    background:#6b3e26;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.add-btn:hover{
+    background:#8b5a3c;
+}
+
+/* list */
+ol{
+    list-style:none;
+    padding:0;
+}
+
+/* user card */
+.user-item{
+    padding:15px;
+    border-bottom:1px solid #eee;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* info */
+.user-info p{
+    margin:3px 0;
+}
+
+/* action buttons container */
+.user-actions{
+    display:flex;
+    gap:10px;
+}
+
+/* edit button */
+.edit-btn{
+    background:#2c7be5;
+    color:white;
+    padding:6px 12px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* delete button */
+.delete-btn{
+    background:#e55353;
+    color:white;
+    padding:6px 12px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+.edit-btn:hover{
+    background:#1a5fd0;
+}
+
+.delete-btn:hover{
+    background:#c94040;
+}

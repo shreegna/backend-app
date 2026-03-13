@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/proindex.css">
+  
 </head>
 <body>
-    <h2>Products Admin Page</h2>
-    <a href="/products/add">Add Product</a>
-    <ol>
-    <% products.forEach(product => { %>
-        <li><%= product.name %>-
-            <%=product.desc %>-
-            <%= product.price %>-
-            <%= product.imageUrl %>-
-            <a href="/products/<%= product._id %>/edit">Edit</a>-
-            <a href="/products/<%= product._id %>/delete">Delete</a>
-        </li>
-    <% }) %>
-    </ol>
+    <div class="admin-container">
+
+<h2>Products Admin Page</h2>
+
+<a class="add-btn" href="/products/add">Add Product</a>
+
+<ol class="product-list">
+<% products.forEach(product => { %>
+    <li class="product-item">
+        <span><%= product.name %></span>
+        <span><%= product.desc %></span>
+        <span>₹<%= product.price %></span>
+        <span><%= product.imageUrl %></span>
+
+        <a class="edit-btn" href="/products/<%= product._id %>/edit">Edit</a>
+        <a class="delete-btn" href="/products/<%= product._id %>/delete">Delete</a>
+    </li>
+<% }) %>
+</ol>
+
+</div>
+
 </body>
 </html>

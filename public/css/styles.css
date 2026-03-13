@@ -1,44 +1,80 @@
 *{
-    margin:0px
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
 }
+
+/* full page layout */
+.page-container{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* header */
 .header{
-    display: flex;
-    justify-content: space-between;
-    
-     background:#5c3a21;
-  font-weight: bold;
-  color: whitesmoke;
-  padding: 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#5c3a21;
+    color:white;
+    padding:15px 30px;
+}
+
+.header h1{
+    font-size:22px;
+}
+
+/* nav list */
+.header ul{
+    list-style:none;
 }
 
 .header li{
-    display: inline-block;
-    padding: 5px;
-    font-size: 20px;
+    display:inline-block;
+    margin-left:20px;
 }
+
+/* links */
 .header a{
-    color: white;
-    text-decoration: none;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
 }
 
 .header a:hover{
-    color: #ffd700; /* optional hover color */
+    color:#ffd700;
 }
+
+/* main content */
+.content{
+    flex:1;
+    padding:30px;
+    background:#f6f2ef;
+}
+
+/* footer */
 .footer{
-     background:#5c3a21;
-  font-weight: bold;
-  color: whitesmoke;
-  padding: 10px;
+    background:#5c3a21;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
-.row {
-    display: flex;
-    /* justify-content: space-around; */
-    flex-wrap: wrap;
+
+/* product cards */
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
 }
+
 .box{
-    margin: 5px;
-    padding: 5px;
-    border:1px solid gray;
-    border-radius: 5px;
-    
+    margin:5px;
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }

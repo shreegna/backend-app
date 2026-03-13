@@ -16,6 +16,14 @@
     padding: 5px;
     font-size: 20px;
 }
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover{
+    color: #ffd700; /* optional hover color */
+}
 .footer{
      background:#5c3a21;
   font-weight: bold;
